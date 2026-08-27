@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS DIGITAL — High-Performance Web & AI Engineering</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['Space Grotesk', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            darkest: '#07090e',
+                            dark: '#0d111a',
+                            card: '#131924',
+                            cyan: '#06b6d4',
+                            violet: '#8b5cf6',
+                            border: 'rgba(255, 255, 255, 0.06)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-darkest text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-brand-darkest relative overflow-x-hidden">
+
+    <!-- Ambient Background Glows für moderne Tiefe -->
+    <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-cyan/5 blur-[150px] rounded-full -z-10 pointer-events-none"></div>
+    <div class="absolute top-[800px] right-10 w-[700px] h-[700px] bg-brand-violet/5 blur-[180px] rounded-full -z-10 pointer-events-none"></div>
+    <div class="absolute bottom-[1000px] left-10 w-[500px] h-[500px] bg-brand-cyan/5 blur-[150px] rounded-full -z-10 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-brand-dark/85 backdrop-blur-md sticky top-0 z-40 border-b border-brand-border py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-brand-cyan to-brand-violet rounded-xl flex items-center justify-center text-brand-darkest font-extrabold text-xl shadow-lg shadow-brand-cyan/10 transition-transform group-hover:scale-105">N</div>
+                <span class="font-mono text-lg font-bold tracking-tight text-white">NEXUS<span class="text-brand-cyan">_</span>DIGITAL</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <a href="#services" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#configurator" class="hover:text-white transition-colors">Web-Konfigurator</a>
+                <a href="#marketplace" class="hover:text-white transition-colors">B2B-Marketplace</a>
+                <a href="#team" class="hover:text-white transition-colors">Team</a>
+                <a href="#architecture" class="hover:text-white transition-colors">Tech-Specs</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#configurator" class="hidden sm:inline-flex bg-brand-dark border border-brand-border hover:border-brand-cyan/40 text-slate-200 hover:text-white text-[11px] font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg transition-all">
+                    Projekt anfragen
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Bereich -->
+    <header class="py-24 px-6 max-w-7xl mx-auto text-center relative">
+        <span class="inline-flex items-center gap-2 bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan text-[10px] font-mono font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 bg-brand-cyan rounded-full animate-pulse"></span> B2B Digital Infrastructure & AI Solutions
+        </span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] max-w-4xl mx-auto text-white">
+            Skalierbare Software & <span class="bg-gradient-to-r from-brand-cyan via-brand-violet to-brand-cyan bg-clip-text text-transparent">KI-Automationen</span> für Konzerne.
+        </h1>
+        <p class="text-slate-400 text-sm md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+            Wir konzipieren und entwickeln maßgeschneiderte High-Performance-Websites, automatisierte Workflows und KI-Schnittstellen, die manuelle Geschäftsprozesse eliminieren [1].
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
+            <a href="#configurator" class="w-full sm:w-auto bg-gradient-to-r from-brand-cyan to-brand-violet hover:brightness-110 text-brand-darkest font-extrabold text-xs uppercase tracking-wider px-8 py-4 rounded-xl transition-all shadow-lg shadow-brand-cyan/10">
+                Konfigurator starten
+            </a>
+            <a href="#marketplace" class="w-full sm:w-auto bg-brand-dark hover:bg-brand-card border border-brand-border hover:border-slate-700 text-white font-extrabold text-xs uppercase tracking-wider px-8 py-4 rounded-xl transition-all">
+                Marktplatz durchsuchen
+            </a>
+        </div>
+    </header>
+
+    <!-- Services / Core Expertise -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto border-t border-brand-border/60">
+        <div class="text-center mb-16">
+            <h2 class="font-mono text-brand-cyan text-xs uppercase tracking-widest">Core Capabilities</h2>
+            <p class="text-2xl md:text-4xl font-extrabold text-white tracking-tight mt-2">Unsere technologische Expertise</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-brand-card/30 border border-brand-border p-8 rounded-2xl hover:border-brand-cyan/30 transition-all duration-300">
+                <div class="w-12 h-12 bg-brand-cyan/10 rounded-xl flex items-center justify-center text-brand-cyan mb-6">
+                    <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white tracking-tight">Enterprise Web Development</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mt-3">Smarte Web-Applikationen und Portale auf Basis moderner Frameworks (Next.js/React). Vollständig responsive, barrierefrei und auf maximale Performance optimiert [1].</p>
+            </div>
+            <div class="bg-brand-card/30 border border-brand-border p-8 rounded-2xl hover:border-brand-violet/30 transition-all duration-300">
+                <div class="w-12 h-12 bg-brand-violet/10 rounded-xl flex items-center justify-center text-brand-violet mb-6">
+                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white tracking-tight">KI & Workflow Automatisierung</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mt-3">Anbindung intelligenter Sprachmodelle (LLMs), automatisierte Terminvergabe, n8n-Integrationen und intelligente KI-Telefonassistenten zur Entlastung Ihres Teams [1].</p>
+            </div>
+            <div class="bg-brand-card/30 border border-brand-border p-8 rounded-2xl hover:border-brand-cyan/30 transition-all duration-300">
+                <div class="w-12 h-12 bg-brand-cyan/10 rounded-xl flex items-center justify-center text-brand-cyan mb-6">
+                    <i data-lucide="shield" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white tracking-tight">DSGVO-Compliance & Hosting</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mt-3">Maximale Datensicherheit durch dediziertes Hosting in ISO-zertifizierten deutschen Rechenzentren sowie strikte Einhaltung der DSGVO-Richtlinien auf Modulebene [1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interaktiver Web-Konfigurator -->
+    <section id="configurator" class="py-20 px-6 max-w-7xl mx-auto border-t border-brand-border/60">
+        <div class="text-center mb-12">
+            <h2 class="font-mono text-brand-cyan text-xs uppercase tracking-widest">Kalkulation</h2>
+            <p class="text-2xl md:text-4xl font-extrabold text-white tracking-tight mt-2">Individuellen Projektumfang schätzen</p>
+            <p class="text-slate-400 text-xs md:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+                Wählen Sie Ihre Systembasis sowie gewünschte Erweiterungen und erhalten Sie eine transparente, unverbindliche Budgetindikation.
+            </p>
+
+            <!-- Modus-Umschalter -->
+            <div class="inline-flex p-1 bg-brand-card/80 backdrop-blur-sm rounded-xl mt-8 border border-brand-border">
+                <button onclick="switchTab('custom')" id="tab-custom" class="px-6 py-2.5 font-bold text-[10px] rounded-lg bg-brand-cyan text-brand-darkest shadow-sm transition-all uppercase tracking-wider font-mono">
+                    Individueller Konfigurator
+                </button>
+                <button onclick="switchTab('sets')" id="tab-sets" class="px-6 py-2.5 font-bold text-[10px] rounded-lg text-slate-400 hover:text-white transition-all uppercase tracking-wider font-mono">
+                    Branchen-Pakete
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Linke Spalte: Konfigurator (7/12) -->
+            <div class="lg:col-span-7 space-y-12">
+                
+                <!-- Individuelle Ansicht -->
+                <div id="view-custom" class="space-y-12">
+                    <!-- Schritt 1: Das Fundament -->
+                    <section class="relative pl-8 border-l border-brand-border">
+                        <span class="absolute -left-4 top-0 w-8 h-8 rounded-lg bg-brand-cyan text-brand-darkest flex items-center justify-center font-mono font-bold text-xs">1</span>
+                        <div class="mb-6">
+                            <h3 class="text-base font-bold text-white tracking-tight uppercase font-mono">Projekt-Fundament</h3>
+                            <p class="text-[11px] text-slate-400 mt-1">Die technologische Basis Ihrer Applikation.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="base-container">
+                            <!-- Dynamisch via JS -->
+                        </div>
+                    </section>
+
+                    <!-- Schritt 2: Module -->
+                    <section class="relative pl-8 border-l border-brand-border">
+                        <span class="absolute -left-4 top-0 w-8 h-8 rounded-lg bg-brand-violet text-white flex items-center justify-center font-mono font-bold text-xs">2</span>
+                        <div class="mb-6">
+                            <h3 class="text-base font-bold text-white tracking-tight uppercase font-mono">Module & KI-Systeme</h3>
+                            <p class="text-[11px] text-slate-400 mt-1">Spezifische Funktionsbausteine und Schnittstellen.</p>
+                        </div>
+
+                        <!-- Filter -->
+                        <div class="flex flex-wrap gap-2 mb-6" id="category-filter-container">
+                            <!-- Dynamisch via JS -->
+                        </div>
+
+                        <!-- Modul-Raster -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="module-container">
+                            <!-- Dynamisch via JS -->
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sets Ansicht -->
+                <div id="view-sets" class="space-y-6 hidden">
+                    <div>
+                        <h3 class="text-base font-bold text-white tracking-tight uppercase font-mono">Erprobte Branchenlösungen</h3>
+                        <p class="text-[11px] text-slate-400 mt-1">Komplett aufeinander abgestimmte Pakete mit Kostenvorteil.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="sets-container">
+                        <!-- Dynamisch via JS -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rechte Spalte: Live-Zusammenfassung & Preview (5/12) -->
+            <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
+                
+                <!-- Interaktive Live-Vorschau (Visuelles Mockup) -->
+                <div class="bg-brand-dark border border-brand-border rounded-2xl p-4 shadow-2xl relative overflow-hidden h-[240px] flex flex-col justify-between">
+                    <!-- Browser Header -->
+                    <div class="flex justify-between items-center pb-3 border-b border-brand-border/60">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-slate-800 inline-block"></span>
+                            <span class="w-2 h-2 rounded-full bg-slate-800 inline-block"></span>
+                            <span class="w-2 h-2 rounded-full bg-slate-800 inline-block"></span>
+                        </div>
+                        <span class="text-[9px] text-slate-500 font-mono tracking-wider">LIVE_RENDER_PREVIEW</span>
+                        <div class="w-4"></div>
+                    </div>
+
+                    <!-- Simulierter Website-Inhalt -->
+                    <div class="flex-1 py-4 px-2 flex flex-col justify-center items-center text-center relative" id="mockup-content">
+                        <!-- Dynamischer Inhalt durch JS gesteuert -->
+                    </div>
+
+                    <div class="text-[8px] text-slate-600 text-center border-t border-brand-border/30 pt-2 font-mono">
+                        simulation_engine.js
+                    </div>
+                </div>
+
+                <!-- Die Kalkulationsbox -->
+                <div class="bg-brand-card/40 border border-brand-border rounded-2xl p-6 shadow-xl relative">
+                    
+                    <!-- Abrechnungs-Umschalter -->
+                    <div class="flex items-center justify-between pb-4 mb-4 border-b border-brand-border/60">
+                        <span class="text-[11px] font-bold text-slate-300 font-mono uppercase">Intervall:</span>
+                        <div class="inline-flex bg-brand-dark p-0.5 rounded-lg border border-brand-border">
+                            <button onclick="toggleBilling('monthly')" id="billing-monthly" class="px-3 py-1.5 text-[9px] font-bold rounded-md transition-all bg-brand-cyan text-brand-darkest uppercase font-mono">
+                                Monatlich
+                            </button>
+                            <button onclick="toggleBilling('annual')" id="billing-annual" class="px-3 py-1.5 text-[9px] font-bold rounded-md transition-all text-slate-400 hover:text-white uppercase flex items-center gap-1 font-mono">
+                                <span>Jährlich</span>
+                                <span class="bg-emerald-500 text-brand-darkest text-[8px] font-bold px-1 rounded">-20%</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Liste der Posten -->
+                    <div class="space-y-3 py-2 max-h-[160px] overflow-y-auto pr-1" id="summary-items">
+                        <!-- Dynamisch via JS -->
+                    </div>
+
+                    <!-- Rabatt Info -->
+                    <div id="discount-badge" class="hidden bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] rounded-xl p-3 flex items-start gap-2 mt-4">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                        <div>
+                            <span class="font-bold">Mengenrabatt aktiv!</span>
+                            <p class="text-[9px] text-emerald-500/80">Ab 3 Modulen sparen Sie zusätzliche 10% auf alle Monatsgebühren.</p>
+                        </div>
+                    </div>
+
+                    <!-- Preisberechnung -->
+                    <div class="border-t border-brand-border/60 pt-6 mt-6 space-y-3">
+                        <div class="flex justify-between text-xs text-slate-400">
+                            <span>Einmalige Einrichtung:</span>
+                            <span class="font-bold text-white font-mono" id="price-once">0,00 €</span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-xs text-slate-400">Laufende Kosten:</span>
+                            <div class="text-right">
+                                <span class="text-2xl font-bold text-brand-cyan font-mono" id="price-monthly">0,00 €</span>
+                                <span class="text-[9px] text-slate-500 block mt-1 leading-normal" id="billing-suffix">Exkl. MwSt.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <button onclick="openModal()" class="w-full mt-6 bg-gradient-to-r from-brand-cyan to-brand-violet hover:brightness-110 text-brand-darkest text-center py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group text-xs uppercase tracking-wider font-mono">
+                        <span>Konzept anfordern</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- B2B Marketplace -->
+    <section id="marketplace" class="py-20 px-6 max-w-7xl mx-auto border-t border-brand-border/60">
+        <div class="text-center mb-12">
+            <h2 class="font-mono text-brand-cyan text-xs uppercase tracking-widest">B2B Marketplace</h2>
+            <p class="text-2xl md:text-4xl font-extrabold text-white tracking-tight mt-2">Vorlagen, Workflows & KI-Prompts</p>
+            <p class="text-slate-400 text-xs md:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+                Beschleunigen Sie Ihre Entwicklung mit unseren verifizierten n8n-Workflow-JSONs, Webflow/React-Templates und optimierten System-Prompts [1].
+            </p>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-10 bg-brand-card/20 p-4 rounded-2xl border border-brand-border">
+            <!-- Search Input -->
+            <div class="relative w-full md:w-80">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500"></i>
+                <input type="text" id="market-search" oninput="filterMarketplace()" placeholder="Suchen..." class="w-full bg-brand-dark border border-brand-border rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-cyan transition-all">
+            </div>
+            <!-- Category Pills -->
+            <div class="flex flex-wrap gap-2 w-full md:w-auto overflow-x-auto">
+                <button onclick="setMarketCategory('all')" id="m-cat-all" class="px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest">Alle</button>
+                <button onclick="setMarketCategory('Website Template')" id="m-cat-template" class="px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-border text-slate-400 hover:border-slate-700 hover:text-white">Templates</button>
+                <button onclick="setMarketCategory('N8N Workflow')" id="m-cat-workflow" class="px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-border text-slate-400 hover:border-slate-700 hover:text-white">Automatisierungen</button>
+                <button onclick="setMarketCategory('KI Prompt')" id="m-cat-prompt" class="px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-border text-slate-400 hover:border-slate-700 hover:text-white">KI Prompts</button>
+                <button onclick="setMarketCategory('Component')" id="m-cat-component" class="px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-border text-slate-400 hover:border-slate-700 hover:text-white">Komponenten</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="marketplace-grid">
+            <!-- Dynamisch via JS gerendert -->
+        </div>
+    </section>
+
+    <!-- Geschäftsführung Section -->
+    <section id="team" class="py-20 px-6 max-w-7xl mx-auto border-t border-brand-border/60">
+        <div class="text-center mb-16">
+            <h2 class="font-mono text-brand-cyan text-xs uppercase tracking-widest">Leadership</h2>
+            <p class="text-2xl md:text-4xl font-extrabold text-white tracking-tight mt-2">Die Geschäftsführung</p>
+            <p class="text-slate-400 text-xs md:text-sm mt-3 max-w-lg mx-auto leading-relaxed">
+                Unsere Gründer verbinden wissenschaftliche Präzision mit modernsten Softwarearchitekturen [1].
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <!-- Team Member 1: Arda Dönmez -->
+            <div class="flex flex-col items-center text-center p-8 bg-brand-card/10 border border-brand-border rounded-2xl hover:border-brand-cyan/20 transition-all group">
+                <div class="w-36 h-36 rounded-2xl mb-6 overflow-hidden relative border border-brand-border flex items-center justify-center bg-brand-dark">
+                    <!-- SVG Placeholder - High tech Avatar representation for Arda Dönmez -->
+                    <svg class="w-20 h-20 text-brand-cyan/40 group-hover:text-brand-cyan transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 21a6 6 0 0 0-12 0" />
+                        <circle cx="12" cy="10" r="4" />
+                        <path d="M12 2v2M12 18v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white tracking-tight">Arda Dönmez</h3>
+                <p class="text-brand-cyan font-mono text-[10px] uppercase tracking-wider mt-1">Co-Founder & CTO / Head of AI Engineering</p>
+                <p class="text-slate-400 text-xs mt-4 leading-relaxed max-w-sm">
+                    Arda Dönmez verantwortet die technologische Ausrichtung, Backend-Architekturen und die Integration hochgradig skalierbarer LLM-Systeme. Er konzipiert agile B2B-Plattformen, die Datensicherheit und KI-Automatisierung vereinen [1].
+                </p>
+            </div>
+
+            <!-- Team Member 2: Nabil El-Hamdan -->
+            <div class="flex flex-col items-center text-center p-8 bg-brand-card/10 border border-brand-border rounded-2xl hover:border-brand-violet/20 transition-all group">
+                <div class="w-36 h-36 rounded-2xl mb-6 overflow-hidden relative border border-brand-border flex items-center justify-center bg-brand-dark">
+                    <!-- SVG Placeholder - High tech Avatar representation for Nabil El-Hamdan -->
+                    <svg class="w-20 h-20 text-brand-violet/40 group-hover:text-brand-violet transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 21a6 6 0 0 0-12 0" />
+                        <circle cx="12" cy="10" r="4" />
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white tracking-tight">Nabil El-Hamdan</h3>
+                <p class="text-brand-violet font-mono text-[10px] uppercase tracking-wider mt-1">Co-Founder & Managing Director / Head of UX & Strategy</p>
+                <p class="text-slate-400 text-xs mt-4 leading-relaxed max-w-sm">
+                    Nabil El-Hamdan leitet die Geschäftsführung sowie die strategische UX/UI-Konzeption. Mit seinem Fokus auf conversion-optimierte Interfaces und nahtlose B2B-Prozesse übersetzt er komplexe Unternehmensanforderungen in performante Softwarelösungen [1].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture & Developer Docs -->
+    <section id="architecture" class="py-20 px-6 max-w-7xl mx-auto border-t border-brand-border/60">
+        <div class="text-center mb-12">
+            <h2 class="font-mono text-brand-cyan text-xs uppercase tracking-widest">Enterprise Architecture</h2>
+            <p class="text-2xl md:text-4xl font-extrabold text-white tracking-tight mt-2">Spezifikationen & Datenbankschema</p>
+            <p class="text-slate-400 text-xs md:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+                Unsere Systeme basieren auf verifizierten Enterprise-Komponenten. Hier sehen Sie die schematische Implementierung der Supabase-Sicherheitsarchitektur für den oben integrierten Marktplatz.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 font-mono text-xs">
+            <!-- Database Schema Visualizer -->
+            <div class="bg-brand-dark border border-brand-border rounded-2xl p-6">
+                <div class="flex items-center gap-2 pb-4 mb-4 border-b border-brand-border/60 text-slate-300">
+                    <i data-lucide="database" class="w-4 h-4 text-brand-cyan"></i>
+                    <span>POSTGRESQL SCHEMATA (SUPABASE)</span>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-brand-cyan font-bold">TABLE: products</span>
+                        <div class="bg-brand-card/30 p-3 rounded-lg border border-brand-border mt-1.5 space-y-1 text-[11px] text-slate-400">
+                            <div>id: <span class="text-slate-200">uuid</span> (Primary Key)</div>
+                            <div>title: <span class="text-slate-200">text</span></div>
+                            <div>slug: <span class="text-slate-200">text</span> (Unique)</div>
+                            <div>description: <span class="text-slate-200">text</span></div>
+                            <div>price: <span class="text-slate-200">numeric</span></div>
+                            <div>category: <span class="text-slate-200">text</span> (Check constraint)</div>
+                            <div>preview_image_url: <span class="text-slate-200">text</span></div>
+                            <div>file_download_path: <span class="text-slate-200">text</span> (Private Bucket Link)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-brand-violet font-bold">TABLE: purchases</span>
+                        <div class="bg-brand-card/30 p-3 rounded-lg border border-brand-border mt-1.5 space-y-1 text-[11px] text-slate-400">
+                            <div>id: <span class="text-slate-200">uuid</span> (Primary Key)</div>
+                            <div>user_id: <span class="text-slate-200">uuid</span> (FK auth.users)</div>
+                            <div>product_id: <span class="text-slate-200">uuid</span> (FK products.id)</div>
+                            <div>stripe_session_id: <span class="text-slate-200">text</span></div>
+                            <div>purchased_at: <span class="text-slate-200">timestamp</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RLS Security Visualizer -->
+            <div class="bg-brand-dark border border-brand-border rounded-2xl p-6">
+                <div class="flex items-center gap-2 pb-4 mb-4 border-b border-brand-border/60 text-slate-300">
+                    <i data-lucide="lock" class="w-4 h-4 text-brand-violet"></i>
+                    <span>ROW LEVEL SECURITY (RLS) POLICIES</span>
+                </div>
+                <div class="space-y-4 text-slate-400 text-[11px] leading-relaxed">
+                    <div class="p-4 bg-brand-card/30 rounded-lg border border-brand-border">
+                        <span class="text-emerald-400 font-bold block mb-1 font-mono">POLICY 1: Public Read Access on 'products'</span>
+                        <code>CREATE POLICY "Allow public read access" ON products FOR SELECT USING (true);</code>
+                    </div>
+                    <div class="p-4 bg-brand-card/30 rounded-lg border border-brand-border">
+                        <span class="text-brand-violet font-bold block mb-1 font-mono">POLICY 2: Protected Download Validation</span>
+                        <p class="mb-2 text-[10px] text-slate-500">Der Zugriff auf private Buckets wird serverseitig via RLS validiert, indem ein gültiger Purchase-Eintrag in der Transaktionsdatenbank nachgewiesen werden muss.</p>
+                        <code class="text-slate-300">
+                            CREATE POLICY "Allow downloads for verified buyers" <br>
+                            ON storage.objects FOR SELECT <br>
+                            USING ( <br>
+                            &nbsp;&nbsp;bucket_id = 'private_assets' AND <br>
+                            &nbsp;&nbsp;EXISTS ( <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;SELECT 1 FROM purchases <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;WHERE purchases.user_id = auth.uid() <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;AND purchases.product_id = (SELECT id FROM products WHERE file_download_path = name) <br>
+                            &nbsp;&nbsp;) <br>
+                            );
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-brand-border/60 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-tr from-brand-cyan to-brand-violet rounded-lg flex items-center justify-center text-brand-darkest font-extrabold text-sm">N</div>
+                <span class="font-mono text-sm tracking-tight text-white">NEXUS_DIGITAL</span>
+            </div>
+            <div class="text-[10px] text-slate-500 font-mono tracking-wider text-center md:text-right">
+                © 2026 NEXUS DIGITAL. ALL RIGHTS RESERVED. <br>
+                GERMAN CLOUD HOSTING — DSGVO KONFORM [1].
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal für Kontaktaufnahme -->
+    <div id="modal" class="fixed inset-0 bg-brand-darkest/70 backdrop-blur-sm z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-brand-card rounded-2xl max-w-md w-full p-6 m-4 relative shadow-2xl border border-brand-border">
+            <button onclick="closeModal()" class="absolute right-4 top-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <h3 class="text-lg font-bold text-white tracking-tight uppercase font-mono">Projekt besprechen</h3>
+            <p class="text-xs text-slate-400 mt-1 mb-6">Wir rufen Sie kurzfristig zurück und besprechen Ihr Vorhaben.</p>
+            
+            <form onsubmit="submitForm(event)" class="space-y-4">
+                <div>
+                    <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">Ansprechpartner*</label>
+                    <input type="text" required placeholder="z. B. Dr. Sabine Schmidt" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+                </div>
+                <div>
+                    <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">E-Mail-Adresse*</label>
+                    <input type="email" required placeholder="name@unternehmen.de" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+                </div>
+                <div>
+                    <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">Telefonnummer</label>
+                    <input type="tel" placeholder="+49 170 1234567" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-brand-cyan to-brand-violet text-brand-darkest font-bold py-4 rounded-xl text-xs mt-4 shadow-md transition-all uppercase tracking-wider font-mono">
+                    Konfiguration einreichen
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS Logik -->
+    <script>
+        const data = {
+            // Geänderte Preise für die Fundamente nach Vorgabe (0, ab 1300, ab 2000)
+            bases: [
+                { id: "standalone", name: "Keine Website", description: "Die Module werden nahtlos als API oder in Ihre bestehende Plattform eingebettet.", price_once: 0, price_monthly: 0, icon: "terminal" },
+                { id: "landingpage", name: "One-Page Website", description: "Hochperformante, conversion-optimierte One-Page Webpräsenz.", price_once: 1300, price_monthly: 29, icon: "tablet" },
+                { id: "business-page", name: "Multi-Page Website", description: "Skalierbare Portalarchitektur für umfassende Darstellungen und Enterprise-Ansprüche.", price_once: 2000, price_monthly: 49, icon: "panels-top-left" }
+            ],
+            sets: [
+                { id: "set-friseur", name: "Automations-Set: Retail & Service", description: "One-Page System inklusive intelligenter Online-Terminbuchung und KI-Telefonassistent.", included_base: "landingpage", included_modules: ["ki-anrufbeantworter", "booking"], discounted_price_once: 1250, discounted_price_monthly: 99 },
+                { id: "set-arzt", name: "System-Set: Praxis & Klinik", description: "Vollwertiges Portal, DSGVO-konformer KI-Chatbot und digitales Formularwesen zur Entlastung.", included_base: "business-page", included_modules: ["ki-chatbot", "rezept-formular"], discounted_price_once: 1950, discounted_price_monthly: 89 }
+            ],
+            modules: [
+                { id: "ki-anrufbeantworter", category: "KI & Automatisierung", name: "KI-Telefon-Assistent", description: "Nimmt Ihre Anrufe automatisiert rund um die Uhr entgegen und synchronisiert Daten.", price_once: 99, price_monthly: 69, icon: "phone" },
+                { id: "ki-chatbot", category: "KI & Automatisierung", name: "Enterprise KI-Chatbot", description: "Intelligenter Bot zur strukturierten Informationsausgabe basierend auf Ihren Daten.", price_once: 49, price_monthly: 39, icon: "bot" },
+                { id: "booking", category: "Kundenkontakt", name: "Smart-Booking Engine", description: "Direkte Terminbuchung für Kunden mit automatisierter SMS/E-Mail-Bestätigung.", price_once: 0, price_monthly: 19, icon: "calendar" },
+                { id: "rezept-formular", category: "Spezial-Module", name: "Digitales Formularsystem", description: "Schnittstelle zur strukturierten, DSGVO-konformen Abfrage von Kundendaten.", price_once: 49, price_monthly: 15, icon: "clipboard-signature" },
+                { id: "lead-formular", category: "Kundenkontakt", name: "Multi-Step Funnel", description: "Mehrteilige, interaktive Qualifizierung von Kontaktdaten für hohe Konversionsraten.", price_once: 29, price_monthly: 15, icon: "sliders" },
+                { id: "whatsapp-chat", category: "Kundenkontakt", name: "WhatsApp API Gateway", description: "Direktes Widget zur direkten, verschlüsselten Servicekommunikation.", price_once: 0, price_monthly: 9, icon: "message-circle" }
+            ],
+            marketplace: [
+                { id: "m1", title: "Quantum SaaS Webflow Template", description: "Vollständig responsives UI-Template für Technologieunternehmen.", price: 149.00, category: "Website Template", badge: "Hot" },
+                { id: "m2", title: "n8n Automated Lead Engine", description: "Verbindet CRM-Systeme, Chatbots und Kalender nahtlos per Webhook.", price: 89.00, category: "N8N Workflow", badge: "Workflow" },
+                { id: "m3", title: "DSGVO System Prompt Pack", description: "Optimierte GPT-4/Claude System-Prompts für Support-Automatisierungen.", price: 29.00, category: "KI Prompt", badge: "Prompt" },
+                { id: "m4", title: "Glassmorphic Component Kit", description: "Eine Sammlung von 25 edlen CSS/Tailwind-Komponenten im Cyber-Style.", price: 49.00, category: "Component", badge: "UI Kit" },
+                { id: "m5", title: "AI Voice-Agent JSON Blueprint", description: "Schnittstellenvorlage für die KI-Voice-Plattform Vapi.", price: 119.00, category: "N8N Workflow", badge: "Popular" },
+                { id: "m6", title: "Cyberpunk Tailwind Dashboard", description: "Komplettes React/Vite Dashboard-Interface mit interaktiven Charts.", price: 199.00, category: "Website Template", badge: "Full App" }
+            ]
+        };
+
+        let selectedConfig = {
+            mode: 'custom',
+            baseId: 'standalone',
+            selectedModules: [],
+            selectedSetId: null,
+            activeFilter: 'all',
+            billingInterval: 'monthly'
+        };
+
+        let activeMarketCategory = 'all';
+
+        // Render Bases
+        function renderBases() {
+            const container = document.getElementById('base-container');
+            container.innerHTML = data.bases.map(base => {
+                const isSelected = selectedConfig.baseId === base.id;
+                // Formulierung der Preise mit 'ab' für Landing- und Business-Page
+                const displayPrice = base.price_once === 0 ? "Einrichtung frei" : `ab ${base.price_once.toLocaleString('de-DE')} €`;
+                
+                return `
+                    <div onclick="selectBase('${base.id}')" class="group relative cursor-pointer border rounded-xl p-4 transition-all duration-300 ${isSelected ? 'border-brand-cyan bg-brand-cyan/5' : 'border-brand-border hover:border-slate-700 bg-brand-card/20'}">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="p-2 bg-brand-dark rounded-lg text-slate-400 group-hover:text-brand-cyan transition-all ${isSelected ? 'text-brand-cyan' : ''}">
+                                <i data-lucide="${base.icon}" class="w-4 h-4"></i>
+                            </div>
+                            <input type="radio" name="base" ${isSelected ? 'checked' : ''} class="text-brand-cyan focus:ring-brand-cyan bg-brand-dark border-brand-border mt-1">
+                        </div>
+                        <h4 class="font-bold text-white text-[11px] uppercase tracking-wide font-mono">${base.name}</h4>
+                        <p class="text-[10px] text-slate-400 mt-1.5 min-h-[44px] leading-relaxed">${base.description}</p>
+                        <div class="text-[10px] text-brand-cyan font-mono mt-2 font-bold">${displayPrice}</div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        // Render Category Filter for Modules
+        function renderFilters() {
+            const container = document.getElementById('category-filter-container');
+            const categories = ['all', ...new Set(data.modules.map(m => m.category))];
+            
+            container.innerHTML = categories.map(cat => {
+                const isSelected = selectedConfig.activeFilter === cat;
+                return `
+                    <button onclick="setFilter('${cat}')" class="px-3 py-1 rounded-lg text-[9px] font-bold font-mono uppercase tracking-wider transition-all border ${isSelected ? 'bg-brand-cyan text-brand-darkest border-brand-cyan' : 'bg-brand-dark text-slate-400 border-brand-border hover:border-slate-700 hover:text-white'}">
+                        ${cat === 'all' ? 'Alle anzeigen' : cat}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        // Render Configurator Modules
+        function renderModules() {
+            const container = document.getElementById('module-container');
+            const filteredModules = selectedConfig.activeFilter === 'all' 
+                ? data.modules 
+                : data.modules.filter(m => m.category === selectedConfig.activeFilter);
+
+            container.innerHTML = filteredModules.map(m => {
+                const isChecked = selectedConfig.selectedModules.includes(m.id);
+                const actualPrice = selectedConfig.billingInterval === 'annual' ? m.price_monthly * 0.8 : m.price_monthly;
+                
+                return `
+                    <div onclick="toggleModule('${m.id}')" class="group cursor-pointer flex items-start gap-3.5 p-4 border rounded-xl bg-brand-card/20 transition-all duration-200 ${isChecked ? 'border-brand-cyan bg-brand-cyan/5' : 'border-brand-border hover:border-slate-700'}">
+                        <div class="mt-0.5" onclick="event.stopPropagation()">
+                            <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleModule('${m.id}')" class="text-brand-cyan bg-brand-dark border-brand-border rounded focus:ring-brand-cyan">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-slate-400 group-hover:text-brand-cyan transition-colors"><i data-lucide="${m.icon}" class="w-3.5 h-3.5"></i></span>
+                                <h4 class="text-xs font-bold text-white tracking-tight">${m.name}</h4>
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-normal">${m.description}</p>
+                        </div>
+                        <div class="text-right text-[10px] whitespace-nowrap ml-1 font-mono">
+                            <span class="font-bold text-brand-cyan">${actualPrice.toLocaleString('de-DE', {minimumFractionDigits: 2})} €</span>
+                            <span class="text-[8px] text-slate-500 block">${selectedConfig.billingInterval === 'annual' ? 'mtl. (jährl.)' : 'mtl.'}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        // Render Sets
+        function renderSets() {
+            const container = document.getElementById('sets-container');
+            container.innerHTML = data.sets.map(set => {
+                const isSelected = selectedConfig.selectedSetId === set.id;
+                const baseMonthly = set.discounted_price_monthly;
+                const actualMonthly = selectedConfig.billingInterval === 'annual' ? baseMonthly * 0.8 : baseMonthly;
+
+                return `
+                    <div onclick="selectSet('${set.id}')" class="group relative cursor-pointer border rounded-xl p-5 transition-all duration-300 ${isSelected ? 'border-brand-cyan bg-brand-cyan/5' : 'border-brand-border hover:border-slate-700 bg-brand-card/20'}">
+                        <span class="absolute -top-3 right-6 bg-brand-cyan text-brand-darkest text-[8px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider font-mono">Paket-Rabatt</span>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-bold text-xs text-white uppercase tracking-wide font-mono">${set.name}</h3>
+                                <p class="text-[10px] text-slate-400 mt-2 leading-relaxed">${set.description}</p>
+                            </div>
+                            <input type="radio" name="sets" ${isSelected ? 'checked' : ''} class="text-brand-cyan bg-brand-dark border-brand-border mt-1">
+                        </div>
+                        <div class="border-t border-brand-border/40 pt-4 mt-4">
+                            <span class="text-[9px] text-slate-500 block mb-1 font-bold uppercase tracking-wider font-mono">Paketpreis:</span>
+                            <div class="text-xs text-slate-400">
+                                <strong class="text-white">ab ${set.discounted_price_once.toLocaleString('de-DE')} €</strong> einmalig<br>
+                                <strong class="text-brand-cyan text-sm font-bold font-mono">${actualMonthly.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Monat</strong>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Render B2B Marketplace Items
+        function renderMarketplace() {
+            const container = document.getElementById('marketplace-grid');
+            const searchVal = document.getElementById('market-search').value.toLowerCase();
+            
+            const filtered = data.marketplace.filter(item => {
+                const matchesCategory = activeMarketCategory === 'all' || item.category === activeMarketCategory;
+                const matchesSearch = item.title.toLowerCase().includes(searchVal) || item.description.toLowerCase().includes(searchVal);
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-slate-500 text-xs font-mono">
+                        Keine Produkte für die aktuelle Auswahl gefunden.
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filtered.map(item => {
+                return `
+                    <div class="bg-brand-card/20 border border-brand-border rounded-xl p-5 hover:border-brand-cyan/20 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 text-[8px] font-bold font-mono px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                    ${item.badge}
+                                </span>
+                                <span class="text-[9px] text-slate-500 font-mono">${item.category}</span>
+                            </div>
+                            <h4 class="text-xs font-bold text-white tracking-tight leading-snug mt-2">${item.title}</h4>
+                            <p class="text-[10px] text-slate-400 mt-2 leading-relaxed min-h-[48px]">${item.description}</p>
+                        </div>
+                        <div class="border-t border-brand-border/40 pt-4 mt-4 flex items-center justify-between">
+                            <span class="text-white font-mono font-bold text-xs">${item.price.toLocaleString('de-DE', {minimumFractionDigits: 2})} €</span>
+                            <button onclick="buyProduct('${item.title}')" class="bg-brand-cyan hover:brightness-110 text-brand-darkest text-[9px] font-bold font-mono uppercase tracking-wider px-3 py-2 rounded-lg transition-all flex items-center gap-1">
+                                <i data-lucide="download" class="w-3 h-3"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        // Marketplace Filter Category
+        function setMarketCategory(cat) {
+            activeMarketCategory = cat;
+            
+            const btnAll = document.getElementById('m-cat-all');
+            const btnTemplate = document.getElementById('m-cat-template');
+            const btnWorkflow = document.getElementById('m-cat-workflow');
+            const btnPrompt = document.getElementById('m-cat-prompt');
+            const btnComponent = document.getElementById('m-cat-component');
+
+            const buttons = [btnAll, btnTemplate, btnWorkflow, btnPrompt, btnComponent];
+            buttons.forEach(btn => {
+                btn.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-border text-slate-400 hover:border-slate-700 hover:text-white";
+            });
+
+            if (cat === 'all') btnAll.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest";
+            if (cat === 'Website Template') btnTemplate.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest";
+            if (cat === 'N8N Workflow') btnWorkflow.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest";
+            if (cat === 'KI Prompt') btnPrompt.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest";
+            if (cat === 'Component') btnComponent.className = "px-4 py-2 rounded-xl text-[10px] font-bold font-mono uppercase tracking-wider transition-all border border-brand-cyan bg-brand-cyan text-brand-darkest";
+
+            renderMarketplace();
+        }
+
+        function filterMarketplace() {
+            renderMarketplace();
+        }
+
+        function buyProduct(title) {
+            alert(`Schnittstellen-Redirect: Der Kauf- & Downloadvorgang für "${title}" wurde initiiert. (Muster-Funktion mit Supabase-Validierung)`);
+        }
+
+        // Toggle Billing Interval
+        function toggleBilling(interval) {
+            selectedConfig.billingInterval = interval;
+            const btnMonthly = document.getElementById('billing-monthly');
+            const btnAnnual = document.getElementById('billing-annual');
+
+            if (interval === 'annual') {
+                btnAnnual.className = "px-3 py-1.5 text-[9px] font-bold rounded-md transition-all bg-brand-cyan text-brand-darkest uppercase flex items-center gap-1 font-mono";
+                btnMonthly.className = "px-3 py-1.5 text-[9px] font-bold rounded-md transition-all text-slate-400 hover:text-white uppercase font-mono";
+            } else {
+                btnMonthly.className = "px-3 py-1.5 text-[9px] font-bold rounded-md transition-all bg-brand-cyan text-brand-darkest uppercase font-mono";
+                btnAnnual.className = "px-3 py-1.5 text-[9px] font-bold rounded-md transition-all text-slate-400 hover:text-white uppercase flex items-center gap-1 font-mono";
+            }
+            updateUI();
+        }
+
+        // Select Base
+        function selectBase(id) {
+            selectedConfig.mode = 'custom';
+            selectedConfig.baseId = id;
+            selectedConfig.selectedSetId = null;
+            updateUI();
+        }
+
+        // Toggle Modules
+        function toggleModule(id) {
+            selectedConfig.mode = 'custom';
+            selectedConfig.selectedSetId = null;
+            const index = selectedConfig.selectedModules.indexOf(id);
+            if (index > -1) {
+                selectedConfig.selectedModules.splice(index, 1);
+            } else {
+                selectedConfig.selectedModules.push(id);
+            }
+            updateUI();
+        }
+
+        // Select Set
+        function selectSet(id) {
+            selectedConfig.mode = 'set';
+            selectedConfig.selectedSetId = id;
+            updateUI();
+        }
+
+        // Set Modules Filter Category
+        function setFilter(category) {
+            selectedConfig.activeFilter = category;
+            renderFilters();
+            renderModules();
+        }
+
+        // Switch Configurator Tabs
+        function switchTab(tab) {
+            const tabCustom = document.getElementById('tab-custom');
+            const tabSets = document.getElementById('tab-sets');
+            const viewCustom = document.getElementById('view-custom');
+            const viewSets = document.getElementById('view-sets');
+
+            if (tab === 'custom') {
+                tabCustom.className = "px-6 py-2.5 font-bold text-[10px] rounded-lg bg-brand-cyan text-brand-darkest shadow-sm transition-all uppercase tracking-wider font-mono";
+                tabSets.className = "px-6 py-2.5 font-bold text-[10px] rounded-lg text-slate-400 hover:text-white transition-all uppercase tracking-wider font-mono";
+                viewCustom.classList.remove('hidden');
+                viewSets.classList.add('hidden');
+                selectedConfig.mode = 'custom';
+            } else {
+                tabSets.className = "px-6 py-2.5 font-bold text-[10px] rounded-lg bg-brand-cyan text-brand-darkest shadow-sm transition-all uppercase tracking-wider font-mono";
+                tabCustom.className = "px-6 py-2.5 font-bold text-[10px] rounded-lg text-slate-400 hover:text-white transition-all uppercase tracking-wider font-mono";
+                viewSets.classList.remove('hidden');
+                viewCustom.classList.add('hidden');
+                selectedConfig.mode = 'set';
+                if (!selectedConfig.selectedSetId) {
+                    selectedConfig.selectedSetId = data.sets[0].id;
+                }
+            }
+            updateUI();
+        }
+
+        // Update Live-Preview Mockup
+        function updateMockup() {
+            const mockup = document.getElementById('mockup-content');
+            let contentHtml = '';
+
+            let baseId = selectedConfig.baseId;
+            let modules = [...selectedConfig.selectedModules];
+
+            if (selectedConfig.mode === 'set') {
+                const currentSet = data.sets.find(s => s.id === selectedConfig.selectedSetId);
+                if (currentSet) {
+                    baseId = currentSet.included_base;
+                    modules = [...currentSet.included_modules];
+                }
+            }
+
+            // Visual Design Mockups depending on base
+            if (baseId === 'standalone') {
+                contentHtml = `
+                    <div class="text-brand-cyan flex flex-col items-center gap-3">
+                        <i data-lucide="terminal" class="w-8 h-8 animate-pulse"></i>
+                        <span class="text-[10px] font-mono text-slate-400">Verbindung zu Live-Schnittstellen (API)</span>
+                        <div class="flex gap-1.5 mt-2 flex-wrap justify-center" id="mockup-module-badges"></div>
+                    </div>
+                `;
+            } else if (baseId === 'landingpage') {
+                contentHtml = `
+                    <div class="w-full h-full bg-brand-darkest rounded-xl border border-brand-border p-3 text-left flex flex-col justify-between">
+                        <div>
+                            <div class="h-2 w-16 bg-brand-cyan rounded mb-2"></div>
+                            <div class="h-4 w-32 bg-slate-800 rounded mb-1"></div>
+                            <div class="h-2 w-24 bg-slate-900 rounded"></div>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="h-4 w-12 bg-brand-cyan/20 border border-brand-cyan/40 rounded text-[7px] font-bold text-brand-cyan flex items-center justify-center font-mono">ON_PAGE</span>
+                            <div class="flex gap-1.5" id="mockup-module-badges"></div>
+                        </div>
+                    </div>
+                `;
+            } else if (baseId === 'business-page') {
+                contentHtml = `
+                    <div class="w-full h-full bg-brand-darkest rounded-xl border border-brand-border p-3 text-left flex flex-col justify-between">
+                        <div class="flex justify-between items-center pb-2 border-b border-brand-border/40">
+                            <div class="h-2 w-8 bg-brand-violet rounded"></div>
+                            <div class="flex gap-2">
+                                <span class="h-1 w-4 bg-slate-800 rounded block"></span>
+                                <span class="h-1 w-4 bg-slate-800 rounded block"></span>
+                                <span class="h-1 w-4 bg-slate-800 rounded block"></span>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="h-3 w-28 bg-slate-800 rounded mb-1"></div>
+                            <div class="h-2 w-36 bg-slate-900 rounded"></div>
+                        </div>
+                        <div class="flex justify-end gap-1.5 mt-1" id="mockup-module-badges"></div>
+                    </div>
+                `;
+            }
+
+            mockup.innerHTML = contentHtml;
+
+            // Render selected modules in mockup
+            const badgesContainer = document.getElementById('mockup-module-badges');
+            if (badgesContainer) {
+                if (modules.length === 0) {
+                    badgesContainer.innerHTML = '<span class="text-[8px] text-slate-600 italic">Keine Module zugeschaltet</span>';
+                } else {
+                    badgesContainer.innerHTML = modules.map(mId => {
+                        const m = data.modules.find(mod => mod.id === mId);
+                        if (!m) return '';
+                        let color = 'bg-brand-cyan/10 text-brand-cyan border-brand-cyan/20';
+                        if (m.category === 'KI & Automatisierung') color = 'bg-brand-violet/10 text-brand-violet border-brand-violet/20';
+                        
+                        return `
+                            <span class="inline-flex items-center gap-1 text-[7px] font-bold px-1.5 py-0.5 rounded-md border ${color}">
+                                <i data-lucide="${m.icon}" class="w-2.5 h-2.5"></i>
+                                ${m.name.split(' ')[0]}
+                            </span>
+                        `;
+                    }).join('');
+                }
+            }
+            lucide.createIcons();
+        }
+
+        // Calculation Logic Update UI
+        function updateUI() {
+            const summaryItems = document.getElementById('summary-items');
+            const priceOnceEl = document.getElementById('price-once');
+            const priceMonthlyEl = document.getElementById('price-monthly');
+            const discountBadge = document.getElementById('discount-badge');
+            const suffix = document.getElementById('billing-suffix');
+
+            let totalOnce = 0;
+            let totalMonthlyEquivalent = 0;
+            let htmlItems = '';
+            let applyDiscount = false;
+
+            const isAnnual = selectedConfig.billingInterval === 'annual';
+            const annualMultiplier = isAnnual ? 0.8 : 1.0;
+
+            if (selectedConfig.mode === 'custom') {
+                const base = data.bases.find(b => b.id === selectedConfig.baseId);
+                if (base) {
+                    const baseMonthlyWithDiscount = base.price_monthly * annualMultiplier;
+                    totalOnce += base.price_once;
+                    totalMonthlyEquivalent += baseMonthlyWithDiscount;
+
+                    const displayPriceOnce = base.price_once === 0 ? "Einrichtung frei" : `ab ${base.price_once.toLocaleString('de-DE')} €`;
+
+                    htmlItems += `
+                        <div class="flex justify-between items-center text-xs font-bold text-white font-mono">
+                            <span>${base.name}</span>
+                            <span>${displayPriceOnce}</span>
+                        </div>
+                    `;
+                }
+
+                applyDiscount = selectedConfig.selectedModules.length >= 3;
+                const volumeMultiplier = applyDiscount ? 0.9 : 1.0;
+
+                selectedConfig.selectedModules.forEach(modId => {
+                    const mod = data.modules.find(m => m.id === modId);
+                    if (mod) {
+                        const modulePriceMonthly = mod.price_monthly * annualMultiplier * volumeMultiplier;
+
+                        totalOnce += mod.price_once;
+                        totalMonthlyEquivalent += modulePriceMonthly;
+
+                        htmlItems += `
+                            <div class="flex justify-between items-start text-xs text-slate-400 pl-3.5 border-l border-brand-border mt-2">
+                                <div>
+                                    <span class="block font-medium text-white">+ ${mod.name}</span>
+                                    <span class="text-[8px] text-slate-500 uppercase tracking-wider font-bold">${mod.category}</span>
+                                </div>
+                                <span class="text-right font-semibold font-mono text-brand-cyan">${modulePriceMonthly.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Mon.</span>
+                            </div>
+                        `;
+                    }
+                });
+
+                if (selectedConfig.selectedModules.length === 0) {
+                    htmlItems += `<div class="text-[11px] text-slate-500 italic pl-3.5 mt-2">Wählen Sie optionale Erweiterungsmodule.</div>`;
+                }
+
+            } else if (selectedConfig.mode === 'set') {
+                const set = data.sets.find(s => s.id === selectedConfig.selectedSetId);
+                if (set) {
+                    totalOnce = set.discounted_price_once;
+                    totalMonthlyEquivalent = set.discounted_price_monthly * annualMultiplier;
+                    htmlItems += `
+                        <div class="text-xs font-extrabold text-white flex justify-between mb-2 uppercase tracking-wide font-mono">
+                            <span>${set.name}</span>
+                            <span class="text-brand-cyan">Paket-Preis</span>
+                        </div>
+                    `;
+                    
+                    const baseObj = data.bases.find(b => b.id === set.included_base);
+                    if (baseObj) {
+                        htmlItems += `<div class="pl-3.5 text-[11px] text-slate-400 flex items-center gap-1.5 font-medium mt-1"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan"></i> ${baseObj.name}</div>`;
+                    }
+
+                    set.included_modules.forEach(modId => {
+                        const mod = data.modules.find(m => m.id === modId);
+                        if (mod) {
+                            htmlItems += `<div class="pl-3.5 text-[11px] text-slate-400 flex items-center gap-1.5 font-medium mt-1"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan"></i> ${mod.name}</div>`;
+                        }
+                    });
+                }
+            }
+
+            if (applyDiscount) {
+                discountBadge.classList.remove('hidden');
+            } else {
+                discountBadge.classList.add('hidden');
+            }
+
+            summaryItems.innerHTML = htmlItems;
+            
+            // Format Setup-Price depending on value
+            priceOnceEl.innerText = totalOnce === 0 ? "0,00 €" : `ab ${totalOnce.toLocaleString('de-DE', {minimumFractionDigits: 0})} €`;
+
+            if (isAnnual) {
+                const totalAnnual = totalMonthlyEquivalent * 12;
+                priceMonthlyEl.innerText = `${totalAnnual.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Jahr`;
+                suffix.innerHTML = `Entspricht ${totalMonthlyEquivalent.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Monat<br><span class="text-emerald-500 font-semibold text-[10px] block mt-1">20% Ersparnis durch jährliche Zahlung</span>`;
+            } else {
+                priceMonthlyEl.innerText = `${totalMonthlyEquivalent.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Monat`;
+                suffix.innerText = "Monatlich abgerechnet, exkl. MwSt.";
+            }
+
+            renderBases();
+            renderFilters();
+            renderModules();
+            renderSets();
+            updateMockup();
+        }
+
+        // Open Contact Modal
+        function openModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.add('opacity-100');
+            }, 10);
+        }
+
+        // Close Contact Modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('opacity-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Handle Form Submit
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Ihre Anfrage wurde erfolgreich verarbeitet und an unsere Berater übermittelt.');
+            closeModal();
+        }
+
+        window.onload = () => {
+            updateUI();
+            renderMarketplace();
+        };
+    </script>
+</body>
+</html>
