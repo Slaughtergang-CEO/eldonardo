@@ -1,0 +1,95 @@
+{
+  "bases": [
+    {
+      "id": "standalone",
+      "name": "Standalone (Keine Website)",
+      "description": "Sie nutzen Ihre bestehende Website. Wir binden die Module per Widget oder Link ein.",
+      "price_once": 0,
+      "price_monthly": 0
+    },
+    {
+      "id": "landingpage",
+      "name": "Landingpage (One-Page)",
+      "description": "Eine moderne, einseitige Website, optimiert für schnelle Kundenanfragen.",
+      "price_once": 490,
+      "price_monthly": 29
+    },
+    {
+      "id": "business-page",
+      "name": "Business Website (Multi-Page)",
+      "description": "Vollständige Website mit bis zu 5 Unterseiten (Home, Leistungen, Kontakt etc.).",
+      "price_once": 990,
+      "price_monthly": 49
+    }
+  ],
+  "sets": [
+    {
+      "id": "set-friseur",
+      "name": "Branchen-Set: Friseursalon",
+      "description": "Komplettpaket für Salons. Landingpage inklusive smarter Online-Terminbuchung und KI-Anrufbeantworter.",
+      "included_base": "landingpage",
+      "included_modules": ["ki-anrufbeantworter", "booking"],
+      "discounted_price_once": 450,
+      "discounted_price_monthly": 109
+    },
+    {
+      "id": "set-arzt",
+      "name": "Branchen-Set: Arztpraxis",
+      "description": "Für Praxen. Mehrseitige Website, DSGVO-konformer KI-Chatbot und Rezept-Vorbestellung.",
+      "included_base": "business-page",
+      "included_modules": ["ki-chatbot", "rezept-formular"],
+      "discounted_price_once": 890,
+      "discounted_price_monthly": 99
+    }
+  ],
+  "modules": [
+    {
+      "id": "ki-anrufbeantworter",
+      "category": "KI & Automatisierung",
+      "name": "KI-Anrufbeantworter",
+      "description": "Nimmt Anrufe an, beantwortet FAQs und trägt Termine im Kalender ein.",
+      "price_once": 99,
+      "price_monthly": 79
+    },
+    {
+      "id": "ki-chatbot",
+      "category": "KI & Automatisierung",
+      "name": "KI-Web-Chatbot",
+      "description": "Ein intelligenter Chat-Assistent auf Ihrer Website für 24/7-Support.",
+      "price_once": 49,
+      "price_monthly": 39
+    },
+    {
+      "id": "booking",
+      "category": "Kundenkontakt",
+      "name": "Online-Terminkalender",
+      "description": "Kunden buchen freie Slots. Inklusive SMS- und E-Mail-Erinnerungen.",
+      "price_once": 0,
+      "price_monthly": 19
+    },
+    {
+      "id": "rezept-formular",
+      "category": "Spezial-Module",
+      "name": "Rezept- & Überweisungs-Formular",
+      "description": "Spezielles Formular für Arztpraxen zur Vorbestellung von Dokumenten.",
+      "price_once": 49,
+      "price_monthly": 15
+    },
+    {
+      "id": "lead-formular",
+      "category": "Kundenkontakt",
+      "name": "Multi-Step Lead-Formular",
+      "description": "Interaktive Abfrage zur qualifizierten Lead-Generierung.",
+      "price_once": 29,
+      "price_monthly": 19
+    },
+    {
+      "id": "whatsapp-chat",
+      "category": "Kundenkontakt",
+      "name": "WhatsApp-Integration",
+      "description": "Direkter Chat-Button für Kunden zur schnellen Kontaktaufnahme.",
+      "price_once": 0,
+      "price_monthly": 9
+    }
+  ]
+}
