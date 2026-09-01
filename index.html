@@ -112,7 +112,7 @@
             <!-- Center: Desktop Menu Links -->
             <div class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider">
                 <a href="#services" class="transition-colors">Unsere Leistungen</a>
-                <a href="#packages" class="transition-colors">Branchen-Pakete</a>
+                <a href="#packages" class="transition-colors">All-in-One Pakete</a>
                 <a href="#addons" class="transition-colors">Zusatz-Module</a>
                 <a href="#roi-calculator" class="transition-colors">Ersparnis-Kalkulator</a>
                 <a href="#configurator" class="transition-colors">Preisschätzung</a>
@@ -134,7 +134,7 @@
         <!-- Mobile Navigation Drawer -->
         <div id="mobile-menu" class="hidden fixed inset-x-0 top-[73px] bg-white/95 backdrop-blur-lg border-b border-slate-200 py-6 px-6 flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider text-slate-700 z-30">
             <a href="#services" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Unsere Leistungen</a>
-            <a href="#packages" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Branchen-Pakete</a>
+            <a href="#packages" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">All-in-One Pakete</a>
             <a href="#addons" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Zusatz-Module</a>
             <a href="#roi-calculator" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Ersparnis-Kalkulator</a>
             <a href="#configurator" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Preisschätzung</a>
@@ -243,141 +243,181 @@
         </div>
     </section>
 
-    <!-- Branchen-Komplettpakete -->
+    <!-- Fachbereich All-in-One Pakete & Ultimate Komplett-Paket -->
     <section id="packages" class="py-12 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200/80 bg-white rounded-3xl shadow-sm my-12">
         <div class="text-center mb-12 sm:mb-16">
             <span class="font-mono text-[#A16207] text-xs uppercase tracking-widest">Sofort-Lösungen</span>
-            <h2 class="font-serif text-xl sm:text-3xl lg:text-4xl font-semibold text-[#0F172A] tracking-tight mt-2">Branchen-Komplettpakete</h2>
+            <h2 class="font-serif text-xl sm:text-3xl lg:text-4xl font-semibold text-[#0F172A] tracking-tight mt-2">Fachbereich All-in-One &amp; Komplett-Pakete</h2>
             <p class="text-slate-600 text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-                Speziell auf Ihren Geschäftstyp abgestimmte Komplettangebote inklusive aller wichtigen Funktionen.
+                Sichern Sie sich praxiserprobte Kombinationen unserer KI-Systeme mit massivem Preisvorteil.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Handwerk & Bau -->
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Paket 1 -->
             <div class="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:border-slate-400 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl inline-block mb-4">
-                        <i data-lucide="hammer" class="w-6 h-6"></i>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl">
+                            <i data-lucide="phone-call" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart ~20%</span>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-[#0F172A]">Handwerk &amp; Bau</h3>
-                    <p class="text-slate-600 text-xs mt-2 leading-relaxed">Präsentieren Sie Ihre Arbeit professionell und gewinnen Sie regionale Aufträge.</p>
-                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Vorher/Nachher-Bildgalerien</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Schnell-Anfrage-Formular</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Übersichtliche Leistungsliste</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Einbindung von Vertrauenssiegeln</li>
+                    <h3 class="font-serif text-lg font-bold text-[#0F172A]">KI-Telefonie &amp; Voice</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-mono mt-1">AI Receptionist Bundle</p>
+                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Ihr digitaler Empfang rund um die Uhr. Keine verpassten Anrufe oder blockierten Leitungen mehr.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium border-t border-slate-200 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> 24/7 KI-Anrufbeantworter (T1)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> KI-Telefon-Terminbucher (T2)</li>
                     </ul>
                 </div>
-                <button onclick="openModal()" class="w-full mt-8 bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Paket anfragen</button>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-400 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">248 €</span> <strong class="text-[#0F172A] text-lg font-mono block">199 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Unverbindlich anfragen</button>
+                </div>
             </div>
             
-            <!-- Gastronomie & Cafés -->
+            <!-- Paket 2 -->
             <div class="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:border-slate-400 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl inline-block mb-4">
-                        <i data-lucide="utensils-crossed" class="w-6 h-6"></i>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart 13%</span>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-[#0F172A]">Gastronomie &amp; Cafés</h3>
-                    <p class="text-slate-600 text-xs mt-2 leading-relaxed">Verwandeln Sie hungrige Webseiten-Besucher in glückliche Tischgäste.</p>
-                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Digitale, mobile Speisekarte</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Einfache Tischreservierung online</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Interaktive Google-Anfahrtskarte</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Klares Öffnungszeiten-Widget</li>
+                    <h3 class="font-serif text-lg font-bold text-[#0F172A]">WhatsApp &amp; Web-Kundenservice</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-mono mt-1">Multi-Channel Chat Bundle</p>
+                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Begleiten Sie Kunden über Ihre Website und den beliebtesten Messenger vollautomatisiert.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium border-t border-slate-200 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> KI-Website-Chatbot (W1)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> KI-WhatsApp-Kundenservice (M3)</li>
                     </ul>
                 </div>
-                <button onclick="openModal()" class="w-full mt-8 bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Paket anfragen</button>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-400 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">78 €</span> <strong class="text-[#0F172A] text-lg font-mono block">69 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Unverbindlich anfragen</button>
+                </div>
             </div>
 
-            <!-- Dienstleister & Praxen -->
+            <!-- Paket 3 -->
             <div class="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:border-slate-400 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl inline-block mb-4">
-                        <i data-lucide="user-check" class="w-6 h-6"></i>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl">
+                            <i data-lucide="calendar" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart ~9%</span>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-[#0F172A]">Dienstleister &amp; Praxen</h3>
-                    <p class="text-slate-600 text-xs mt-2 leading-relaxed">Sichern Sie sich mehr Termine und stellen Sie Ihre Expertise in den Vordergrund.</p>
-                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Integrierte Online-Terminbuchung</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Google-Sterne &amp; Kundenbewertungen</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Sympathische Team-Vorstellung</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Strukturierter Leistungskatalog</li>
+                    <h3 class="font-serif text-lg font-bold text-[#0F172A]">Terminplanung &amp; Lead-Qualifizierung</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-mono mt-1">Auto-Booking Bundle</p>
+                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Strukturierte Buchung kombiniert mit automatisierten Benachrichtigungen für null Terminausfälle.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium border-t border-slate-200 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Smarter KI-Terminplaner (W2)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Automatisierte Termin-Erinnerung (M1)</li>
                     </ul>
                 </div>
-                <button onclick="openModal()" class="w-full mt-8 bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Paket anfragen</button>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-400 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">98 €</span> <strong class="text-[#0F172A] text-lg font-mono block">89 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Unverbindlich anfragen</button>
+                </div>
+            </div>
+
+            <!-- Paket 4 -->
+            <div class="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:border-slate-400 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl">
+                            <i data-lucide="phone-off" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart ~19%</span>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-[#0F172A]">Smart Call &amp; Message Backup</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-mono mt-1">Lead Rescue Bundle</p>
+                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Gehen Sie sicher, dass keine Anfrage verloren geht – egal ob per Website-Chat oder Anruf.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium border-t border-slate-200 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Verpasster-Anruf-Retter (M2)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> KI-Website-Chatbot (W1)</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-400 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">98 €</span> <strong class="text-[#0F172A] text-lg font-mono block">79 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Unverbindlich anfragen</button>
+                </div>
+            </div>
+
+            <!-- Paket 5 -->
+            <div class="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:border-slate-400 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-[#0F172A]/5 text-[#0F172A] rounded-xl">
+                            <i data-lucide="star" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart ~19%</span>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-[#0F172A]">Reputation &amp; Kundenbindung</h3>
+                    <p class="text-slate-500 text-[10px] uppercase font-mono mt-1">Trust &amp; Loyalty Bundle</p>
+                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Mehr 5-Sterne-Bewertungen bei Google und ein motivierendes digitales Kunden-Loyalitätssystem.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-600 font-medium border-t border-slate-200 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Google-Bewertungs-Booster (R1)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Digitales KI-Stempelheft (R2)</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-400 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">98 €</span> <strong class="text-[#0F172A] text-lg font-mono block">79 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#0F172A] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">Unverbindlich anfragen</button>
+                </div>
+            </div>
+
+            <!-- Ultimate Paket -->
+            <div class="bg-[#0F172A] text-white border border-[#A16207] rounded-2xl p-6 sm:p-8 hover:border-[#A16207] transition-all flex flex-col justify-between relative shadow-xl">
+                <span class="absolute -top-3 right-6 bg-[#A16207] text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider font-mono">Bester Deal</span>
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="p-3 bg-white/10 text-white rounded-xl">
+                            <i data-lucide="sparkles" class="w-6 h-6 text-[#A16207]"></i>
+                        </div>
+                        <span class="bg-[#A16207]/20 text-[#A16207] border border-[#A16207]/30 text-[9px] font-bold font-mono px-2 py-1 rounded-full uppercase tracking-wider">Spart ~40%</span>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white">Ultimate Komplett-Paket</h3>
+                    <p class="text-[#A16207] text-[10px] uppercase font-mono mt-1">Premium All-in-One Automation</p>
+                    <p class="text-slate-300 text-xs mt-3 leading-relaxed">Die allumfassende, voll integrierte Gesamtlösung. Schöpfen Sie das volle Potenzial aller 9 Module aus.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-slate-200 font-medium border-t border-white/10 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Alle 9 Einzelmodule enthalten</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#A16207]"></i> Nahtlos vernetzte Gesamtlösung</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <div class="text-xs text-slate-300 mb-3">
+                        Laufender Preis: <span class="line-through text-slate-400">631 €</span> <strong class="text-white text-lg font-mono block">400 € / Mo.</strong>
+                    </div>
+                    <button onclick="openModal()" class="w-full bg-[#A16207] hover:bg-[#854D0E] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Jetzt unverbindlich anfragen</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Zusatz-Module -->
+    <!-- Zusatz-Module (Dynamisch gerendert aus JS-Konfiguration) -->
     <section id="addons" class="py-12 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200/80">
         <div class="text-center mb-12 sm:mb-16">
             <span class="font-mono text-[#A16207] text-xs uppercase tracking-widest">Nützliche Extras</span>
-            <h2 class="font-serif text-xl sm:text-3xl lg:text-4xl font-semibold text-[#0F172A] tracking-tight mt-2">Zubuchbare Funktions-Module (Add-ons)</h2>
+            <h2 class="font-serif text-xl sm:text-3xl lg:text-4xl font-semibold text-[#0F172A] tracking-tight mt-2">Zubuchbare Funktions-Module (Einzelmodule)</h2>
             <p class="text-slate-600 text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-                Erweitern Sie Ihren digitalen Auftritt ganz unkompliziert um gezielte, wertvolle Funktionen für Ihren Alltagsbetrieb.
+                Erweitern Sie Ihren Auftritt ganz flexibel um gezielte und wertvolle Einzelfunktionen für Ihren Alltagsbetrieb.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Google-Paket -->
-            <div class="bg-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="search" class="w-5 h-5"></i></div>
-                        <h4 class="font-serif font-bold text-[#0F172A] text-base">Google-Paket</h4>
-                    </div>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Professionelle Einrichtung Ihres Google My Business Eintrags sowie lokale Suchmaschinenoptimierung (SEO) für maximale regionale Auffindbarkeit.</p>
-                </div>
-                <button onclick="openModal()" class="w-full mt-6 bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Hinzufügen</button>
-            </div>
-
-            <!-- WhatsApp-Chat-Button -->
-            <div class="bg-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="message-circle" class="w-5 h-5"></i></div>
-                        <h4 class="font-serif font-bold text-[#0F172A] text-base">WhatsApp-Chat-Button</h4>
-                    </div>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Schaffen Sie eine direkte, hürdenfreie Kommunikationslinie für Ihre Kunden – Anfragen landen sofort auf Ihrem Smartphone.</p>
-                </div>
-                <button onclick="openModal()" class="w-full mt-6 bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Hinzufügen</button>
-            </div>
-
-            <!-- Bewertungs-Booster -->
-            <div class="bg-white border border-slate-200 p-6 rounded-xl flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="star" class="w-5 h-5"></i></div>
-                        <h4 class="font-serif font-bold text-[#0F172A] text-base">Bewertungs-Booster</h4>
-                    </div>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Einbindung Ihrer echten Google- &amp; ProvenExpert-Bewertungen direkt auf der Startseite zur schnellen Vertrauensbildung.</p>
-                </div>
-                <button onclick="openModal()" class="w-full mt-6 bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Hinzufügen</button>
-            </div>
-
-            <!-- Wartung & Pflege -->
-            <div class="bg-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="shield" class="w-5 h-5"></i></div>
-                        <h4 class="font-serif font-bold text-[#0F172A] text-base">Wartung &amp; Pflege</h4>
-                    </div>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Rundum-Sicher-Gefühl: Wir übernehmen monatliche Updates, regelmäßige Backups, Server-Wartung und die laufende DSGVO-Konformität.</p>
-                </div>
-                <button onclick="openModal()" class="w-full mt-6 bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Hinzufügen</button>
-            </div>
-
-            <!-- Express-Starter -->
-            <div class="bg-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="rocket" class="w-5 h-5"></i></div>
-                        <h4 class="font-serif font-bold text-[#0F172A] text-base">Express-Starter</h4>
-                    </div>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed">Ihr pflegeleichtes Startpaket: Mit der Express-Option stellen wir Ihre neue Firmenhomepage innerhalb von nur 7 Werktagen komplett fertig.</p>
-                </div>
-                <button onclick="openModal()" class="w-full mt-6 bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">Hinzufügen</button>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="addons-container">
+            <!-- Wird dynamisch befüllt -->
         </div>
     </section>
 
@@ -496,7 +536,7 @@
                     Maßgeschneiderte Lösung
                 </button>
                 <button onclick="switchTab('sets')" id="tab-sets" class="px-4 sm:px-6 py-2.5 font-bold text-[9px] sm:text-[10px] rounded-lg text-slate-600 hover:text-slate-900 transition-all uppercase tracking-wider font-mono bg-white border border-slate-200">
-                    Branchen-Pakete
+                    All-in-One Pakete
                 </button>
             </div>
         </div>
@@ -619,40 +659,12 @@
                     </div>
 
                     <button onclick="openModal()" class="w-full mt-6 bg-[#0F172A] hover:bg-slate-800 text-white !text-white text-center py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group text-xs uppercase tracking-wider font-mono">
-                        <span>Konzept anfordern</span>
+                        <span>Unverbindliches Konzept anfordern</span>
                         <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
                     </button>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Live Automations Terminal -->
-    <section id="terminal-simulation" class="py-12 sm:py-16 px-4 sm:px-6 max-w-4xl mx-auto border-t border-slate-200/80">
-        <div class="text-center mb-8">
-            <span class="font-mono text-brand-cyan text-xs uppercase tracking-widest">Live Engine Simulation</span>
-            <h2 class="font-serif text-xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mt-2">So funktioniert die Automatisierung live</h2>
-            <p class="text-slate-400 text-xs sm:text-sm mt-2">So arbeitet die ELDONARDO-Infrastruktur im Hintergrund für Ihr Unternehmen.</p>
-        </div>
-
-        <!-- Terminal Box -->
-        <div class="bg-[#0b0d13] border border-slate-200/80 rounded-xl overflow-hidden shadow-2xl font-mono text-[10px] sm:text-xs">
-            <!-- Header Bar -->
-            <div class="bg-white/10 px-4 py-3 border-b border-white/10 flex justify-between items-center text-slate-500">
-                <div class="flex gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block"></span>
-                </div>
-                <span class="text-[9px] tracking-widest text-slate-400 uppercase">n8n_pipeline_monitor.log</span>
-                <span class="text-brand-cyan animate-pulse">● LIVE</span>
-            </div>
-
-            <!-- Terminal Output Area -->
-            <div id="terminal-output" class="p-5 min-h-[160px] max-h-[160px] overflow-y-auto space-y-2 text-slate-400 leading-relaxed">
-                <!-- Zeilen werden per JS hineingeschrieben -->
-            </div>
         </div>
     </section>
 
@@ -689,80 +701,6 @@
                 <p class="text-slate-600 text-xs mt-4 leading-relaxed">
                     Nabil El-Hamdan leitet die Entwicklung neuer Systemmodule und KI-Integrationen. In seiner Hand liegt die Forschung und technische Innovation, um neuartige Automatisierungs-Erweiterungen zu konzipieren.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Architecture & Schema Explanation (Unsere Qualitäts- & Sicherheitsstandards) -->
-    <section id="architecture" class="py-12 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200/80">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
-            <!-- Left column: Explanation -->
-            <div class="lg:col-span-5 space-y-4">
-                <span class="font-mono text-[#A16207] text-xs uppercase tracking-widest">Sicherheit &amp; Struktur</span>
-                <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-[#0F172A] tracking-tight">Unsere Qualitäts- &amp; Sicherheitsstandards</h2>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                    Sicherheit und Datenschutz stehen bei uns an erster Stelle. Wir setzen auf bewährte, moderne Datenbanktechnologien von Supabase, um Ihre Kundendaten optimal zu schützen. Mit unserer automatisierten Sicherheits-Validierung garantieren wir, dass sensible Dateien wie Rechnungen oder Buchungsdaten ausschließlich für berechtigte Personen zugänglich sind.
-                </p>
-                <p class="text-slate-500 text-xs leading-relaxed">
-                    <strong>Das Sicherheitskonzept:</strong> Die Dateipfade zu n8n-Workflow-Inhalten oder exklusiven Code-Elementen liegen in geschützten Private Buckets. Über Row Level Security (RLS) verifiziert die datenbank live, ob der anfragende Nutzer einen aktiven Kauf-Eintrag in der Transaktionsdatenbank (<code class="text-brand-cyan">purchases</code>) besitzt, bevor der Server den Download gewährt.
-                </p>
-            </div>
-            <!-- Right column: Database Visualization -->
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-[10px] sm:text-xs">
-                <!-- DB Schema Card -->
-                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
-                    <div class="flex items-center gap-2 pb-3 mb-3 border-b border-slate-200 text-[#0F172A]">
-                        <i data-lucide="database" class="w-4 h-4 text-brand-cyan"></i>
-                        <span>SCHEMA: products & purchases</span>
-                    </div>
-                    <div class="space-y-4 text-slate-700">
-                        <div>
-                            <span class="text-brand-cyan font-bold block">TABLE: products</span>
-                            <div class="bg-[#F8FAFC] p-2.5 rounded border border-brand-border mt-1 space-y-1 text-slate-600">
-                                <div>id: <span class="text-[#0F172A]">uuid</span> (PK)</div>
-                                <div>title / slug: <span class="text-[#0F172A]">text</span></div>
-                                <div>price: <span class="text-[#0F172A]">numeric</span></div>
-                                <div>category: <span class="text-[#0F172A]">text</span></div>
-                                <div>file_download_path: <span class="text-[#0F172A]">text</span></div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="text-[#A16207] font-bold block">TABLE: purchases</span>
-                            <div class="bg-[#F8FAFC] p-2.5 rounded border border-brand-border mt-1 space-y-1 text-slate-600">
-                                <div>id: <span class="text-[#0F172A]">uuid</span> (PK)</div>
-                                <div>user_id: <span class="text-[#0F172A]">uuid</span> (FK)</div>
-                                <div>product_id: <span class="text-[#0F172A]">uuid</span> (FK)</div>
-                                <div>stripe_session_id: <span class="text-[#0F172A]">text</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RLS Security Card -->
-                <div class="bg-white border border-slate-200 rounded-xl p-5 flex flex-col justify-between shadow-sm">
-                    <div>
-                        <div class="flex items-center gap-2 pb-3 mb-3 border-b border-slate-200 text-[#0F172A]">
-                            <i data-lucide="lock" class="w-4 h-4 text-[#A16207]"></i>
-                            <span>ROW LEVEL SECURITY POLICY</span>
-                        </div>
-                        <p class="text-[10px] text-slate-600 mb-3 leading-relaxed">
-                            Verhindert unbefugte Dateidownloads direkt über den Storage-Bucket auf Dateiebene:
-                        </p>
-                        <div class="bg-[#F8FAFC] p-2.5 rounded border border-brand-border text-slate-700 overflow-x-auto whitespace-pre"><code>CREATE POLICY "Buyer Validation" 
-ON storage.objects FOR SELECT 
-USING (
-  bucket_id = 'private_assets' 
-  AND EXISTS (
-    SELECT 1 FROM purchases 
-    WHERE user_id = auth.uid() 
-    AND product_id = (
-      SELECT id FROM products 
-      WHERE file_download_path = name
-    )
-  )
-);</code></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -885,7 +823,7 @@ USING (
                     <input type="tel" name="Telefonnummer" placeholder="+49 170 1234567" class="w-full bg-[#F8FAFC] border border-slate-200 rounded-xl px-4 py-3 text-xs text-[#0F172A] focus:outline-none focus:border-brand-cyan">
                 </div>
                 <button type="submit" id="submit-btn" class="w-full bg-[#0F172A] hover:bg-slate-800 text-white font-bold py-4 rounded-xl text-xs mt-4 shadow-md transition-all uppercase tracking-wider font-mono">
-                    <span id="btn-text">Erstgespräch vereinbaren</span>
+                    <span id="btn-text">Unverbindliches Erstgespräch vereinbaren</span>
                 </button>
             </form>
         </div>
@@ -913,16 +851,26 @@ USING (
                 { id: "business-page", name: "Multi-Page Website", description: "Umfassender, mehrseitiger Internetauftritt für die detaillierte Darstellung Ihres Betriebs.", price_once: 2000, price_monthly: 49, icon: "panels-top-left" }
             ],
             sets: [
-                { id: "set-friseur", name: "Rundum-Sorglos: Lokaler Service", description: "Inklusive One-Page Website, automatischem Online-Terminkalender und WhatsApp API Gateway.", included_base: "landingpage", included_modules: ["whatsapp-chat", "booking"], discounted_price_once: 1250, discounted_price_monthly: 99 },
-                { id: "set-arzt", name: "Effizienz-Paket: Praxis & Kanzlei", description: "Vollständiges Portal inklusive DSGVO-konformem Website-Chatbot und digitalem Bestellformular.", included_base: "business-page", included_modules: ["ki-chatbot", "rezept-formular"], discounted_price_once: 1950, discounted_price_monthly: 89 }
+                { id: "set-phone", name: "KI-Telefonie & Voice (AI Receptionist)", description: "24/7 KI-Anrufbeantworter (T1) + KI-Telefon-Terminbucher (T2)", included_base: "standalone", included_modules: ["T1", "T2"], discounted_price_once: 0, discounted_price_monthly: 199 },
+                { id: "set-service", name: "WhatsApp & Web-Kundenservice", description: "KI-Website-Chatbot (W1) + KI-WhatsApp-Kundenservice (M3)", included_base: "standalone", included_modules: ["W1", "M3"], discounted_price_once: 0, discounted_price_monthly: 69 },
+                { id: "set-booking", name: "Smarte Terminplanung & Lead-Qualifizierung", description: "Smarter KI-Terminplaner (W2) + Automatisierte Termin-Erinnerung (M1)", included_base: "standalone", included_modules: ["W2", "M1"], discounted_price_once: 0, discounted_price_monthly: 89 },
+                { id: "set-backup", name: "Smart Call & Message Backup", description: "Verpasster-Anruf-Retter (M2) + KI-Website-Chatbot (W1)", included_base: "standalone", included_modules: ["M2", "W1"], discounted_price_once: 0, discounted_price_monthly: 79 },
+                { id: "set-loyalty", name: "Reputation & Kundenbindung", description: "Google-Bewertungs-Booster (R1) + Digitales KI-Stempelheft (R2)", included_base: "standalone", included_modules: ["R1", "R2"], discounted_price_once: 0, discounted_price_monthly: 79 },
+                { id: "set-ultimate", name: "Ultimate Komplett-Paket (Premium All-in-One)", description: "Alle 9 Einzelmodule in einer vollkommen integrierten Gesamtlösung für Ihr B2B-Business.", included_base: "standalone", included_modules: ["W1", "W2", "M1", "M2", "M3", "T1", "T2", "R1", "R2"], discounted_price_once: 0, discounted_price_monthly: 249 }
             ],
             modules: [
-                { id: "ki-anrufbeantworter", category: "Google & Sichtbarkeit", name: "Google SEO-Paket", description: "Google My Business Einrichtung sowie lokale Suchmaschinenoptimierung für Bonn und Umland.", price_once: 149, price_monthly: 39, icon: "search" },
-                { id: "ki-chatbot", category: "KI & Automation", name: "Enterprise KI-Chatbot", description: "Intelligenter Bot zur strukturierten Informationsausgabe basierend auf Ihren Daten.", price_once: 99, price_monthly: 49, icon: "bot" },
-                { id: "booking", category: "Kundenkontakt", name: "Online-Terminkalender", description: "Direkte Terminbuchung für Kunden mit automatisierter SMS/E-Mail-Bestätigung.", price_once: 0, price_monthly: 19, icon: "calendar" },
-                { id: "rezept-formular", category: "Zusatz-Funktionen", name: "Digitales Formularsystem", description: "Rezeptanfragen, Bestellungen oder Kontaktformulare – rechtssicher und unkompliziert.", price_once: 49, price_monthly: 9, icon: "clipboard-signature" },
-                { id: "lead-formular", category: "Kundenkontakt", name: "WhatsApp API Gateway", description: "Erlaubt direkte Kundenanfragen per WhatsApp direkt auf das Handy des Inhabers.", price_once: 0, price_monthly: 9, icon: "message-circle" },
-                { id: "whatsapp-chat", category: "Zusatz-Funktionen", name: "Sicherheits- &amp; Backup-Paket", description: "Umfassender Schutz Ihrer Daten mit regelmäßigen Backups, Updates und DSGVO-Pflege.", price_once: 99, price_monthly: 15, icon: "shield" }
+                { id: "W1", category: "Webseiten-Bausteine", name: "KI-Website-Chatbot", description: "Intelligenter Kundenservice-Chatbot direkt auf Ihrer Webseite.", price_once: 0, price_monthly: 49, icon: "bot" },
+                { id: "W2", category: "Webseiten-Bausteine", name: "Smarter KI-Terminplaner", description: "Terminvereinbarung komplett auf Autopilot mit intelligenter Kalender-Prüfung.", price_once: 0, price_monthly: 69, icon: "calendar" },
+                
+                { id: "M1", category: "Messaging & Benachrichtigungen", name: "Automatisierte Termin-Erinnerung", description: "Verhindert Terminausfälle via personalisierter SMS- oder WhatsApp-Meldungen.", price_once: 0, price_monthly: 29, icon: "message-square" },
+                { id: "M2", category: "Messaging & Benachrichtigungen", name: "Verpasster-Anruf-Retter", description: "Sollten Sie einmal nicht erreichbar sein, kontaktiert das System den Kunden per SMS/WhatsApp.", price_once: 0, price_monthly: 49, icon: "phone-off" },
+                { id: "M3", category: "Messaging & Benachrichtigungen", name: "KI-WhatsApp-Kundenservice", description: "Automatisierter Kundenservice rund um die Uhr direkt über den beliebtesten Messenger.", price_once: 0, price_monthly: 39, icon: "message-circle" },
+                
+                { id: "T1", category: "Telefonie & Voice Agents", name: "24/7 KI-Anrufbeantworter", description: "Telefonischer Voice-Assistent, der Anrufe entgegennimmt, kategorisiert und weiterleitet.", price_once: 0, price_monthly: 99, icon: "mic" },
+                { id: "T2", category: "Telefonie & Voice Agents", name: "KI-Telefon-Terminbucher", description: "Vollwertiger Telefon-Assistent, der im Live-Gespräch Termine abstimmt und bucht.", price_once: 0, price_monthly: 149, icon: "phone-call" },
+                
+                { id: "R1", category: "Reputation & Kundenbindung", name: "Google-Bewertungs-Booster", description: "Echte Google-Bewertungen einsammeln (inklusive physischem NFC-Aufsteller/Tag).", price_once: 0, price_monthly: 39, icon: "star" },
+                { id: "R2", category: "Reputation & Kundenbindung", name: "Digitales KI-Stempelheft", description: "Modernes Treue-System zur Steigerung der Kundenbindung per Handy-App.", price_once: 0, price_monthly: 59, icon: "award" }
             ],
             marketplace: [
                 { id: "m1", title: "Elegante Handwerker- &amp; Dienstleister-Vorlage", description: "Eine moderne, einladende Website-Vorlage für lokale Handwerksbetriebe und Dienstleister.", price: 149.00, category: "Website Template", badge: "Beliebt" },
@@ -934,22 +882,21 @@ USING (
             ],
             legalTexts: {
                 impressum: {
-                    title: "Impressum — Angaben gemäß § 5 TMG",
+                    title: "Impressum",
                     html: `
-                        <p class="font-bold text-[#0F172A]">ELDONARDO GbR</p>
-                        <p>Gierolstraße 35</p>
-                        <p>53113 Bonn</p>
-                        <p>Deutschland</p>
+                        <p class="font-bold text-[#0F172A]">Angaben gemäß § 5 DDG</p>
+                        <p>Nabil El-Hamdan</p>
+                        <p>Susanne-Miller-Str. 2</p>
+                        <p>53125 Bonn</p>
                         <br>
-                        <p class="font-bold text-[#0F172A]">Vertreten durch:</p>
-                        <p>Arda Dönmez, Nabil El-Hamdan</p>
+                        <p class="font-bold text-[#0F172A]">Kontakt</p>
+                        <p>Telefon: 0151134567</p>
+                        <p>E-Mail: elitednabiolo@gmail.com</p>
                         <br>
-                        <p class="font-bold text-[#0F172A]">Kontakt:</p>
-                        <p>E-Mail: info@eldonardo.de</p>
-                        <p>Web: www.eldonardo.de</p>
-                        <br>
-                        <p class="font-bold text-[#0F172A]">Umsatzsteuer-Hinweis:</p>
-                        <p>Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet und ausgewiesen.</p>
+                        <p class="font-bold text-[#0F172A]">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</p>
+                        <p>Nabil El-Hamdan</p>
+                        <p>Susanne-Miller-Str. 2</p>
+                        <p>53125 Bonn</p>
                     `
                 },
                 datenschutz: {
@@ -1060,7 +1007,7 @@ USING (
             lucide.createIcons();
         }
 
-        // Render Sets
+        // Render Sets (All-in-One Pakete)
         function renderSets() {
             const container = document.getElementById('sets-container');
             if (!container) return;
@@ -1068,6 +1015,10 @@ USING (
                 const isSelected = selectedConfig.selectedSetId === set.id;
                 const baseMonthly = set.discounted_price_monthly;
                 const actualMonthly = selectedConfig.billingInterval === 'annual' ? baseMonthly * 0.8 : baseMonthly;
+
+                const setupPrice = set.discounted_price_once > 0 
+                    ? `<strong class="text-slate-900">ab ${set.discounted_price_once.toLocaleString('de-DE')} €</strong> einmalig<br>` 
+                    : '<strong class="text-slate-900">Einrichtung frei</strong> einmalig<br>';
 
                 return `
                     <div onclick="selectSet('${set.id}')" class="group relative cursor-pointer border rounded-xl p-5 transition-all duration-300 ${isSelected ? 'border-slate-800 bg-[#0F172A]/5' : 'border-slate-200 hover:border-slate-400 bg-white shadow-sm'}">
@@ -1082,13 +1033,38 @@ USING (
                         <div class="border-t border-slate-200 pt-4 mt-4">
                             <span class="text-[9px] text-slate-500 block mb-1 font-bold uppercase tracking-wider font-mono">Paketpreis:</span>
                             <div class="text-xs text-slate-700">
-                                <strong class="text-slate-900">ab ${set.discounted_price_once.toLocaleString('de-DE')} €</strong> einmalig<br>
+                                ${setupPrice}
                                 <strong class="text-[#0F172A] text-sm font-bold font-mono">${actualMonthly.toLocaleString('de-DE', {minimumFractionDigits: 2})} € / Monat</strong>
                             </div>
                         </div>
                     </div>
                 `;
             }).join('');
+        }
+
+        // Render Zubuchbare Module in die Zusatz-Module Sektion
+        function renderAddonsSection() {
+            const container = document.getElementById('addons-container');
+            if (!container) return;
+            container.innerHTML = data.modules.map(m => {
+                return `
+                    <div class="bg-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-sm hover:border-slate-300 transition-all">
+                        <div>
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-yellow-50 text-[#A16207] rounded-xl"><i data-lucide="${m.icon || 'circle'}" class="w-5 h-5"></i></div>
+                                <h4 class="font-serif font-bold text-[#0F172A] text-base">${m.name}</h4>
+                            </div>
+                            <span class="text-[9px] text-slate-500 font-mono mt-1.5 block uppercase tracking-wider">${m.category}</span>
+                            <p class="text-slate-600 text-xs mt-3 leading-relaxed">${m.description}</p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-brand-cyan font-mono font-bold text-xs">${m.price_monthly} € / Monat</span>
+                            <button onclick="openModal()" class="bg-[#F8FAFC] border border-slate-200 hover:bg-slate-100 text-[#0F172A] px-4 py-2 rounded-xl font-bold text-[10px] uppercase tracking-wider transition-all">Anfragen</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
         }
 
         // Render B2B Marketplace Items
@@ -1309,7 +1285,7 @@ USING (
                         const m = data.modules.find(mod => mod.id === mId);
                         if (!m) return '';
                         let color = 'bg-[#0F172A]/10 text-[#0F172A] border-[#0F172A]/20';
-                        if (m.category === 'KI & Automatisierung') color = 'bg-[#A16207]/10 text-[#A16207] border-[#A16207]/20';
+                        if (m.category.includes('KI') || m.category.includes('Telefonie')) color = 'bg-[#A16207]/10 text-[#A16207] border-[#A16207]/20';
                         
                         return `
                             <span class="inline-flex items-center gap-0.5 text-[6px] font-bold px-1 py-0.5 rounded border ${color}">
@@ -1514,53 +1490,6 @@ USING (
             });
         }
 
-        // Terminal Log loop variables & function
-        const terminalLogs = [
-            { text: "📥 Neue Kundenanfrage über das Web-Formular empfangen...", color: "text-slate-400" },
-            { text: "🤖 System prüft automatisch Ihren Google Kalender...", color: "text-brand-violet" },
-            { text: "📅 Passender Termin gefunden und automatisch reserviert.", color: "text-slate-300" },
-            { text: "💬 Bestätigungs-SMS an Kunden gesendet. Erledigt!", color: "text-brand-cyan font-bold" },
-            { text: "--------------------------------------------------------", color: "text-slate-600" },
-            { text: "📥 Anruf auf Praxis-Telefon unbeantwortet...", color: "text-slate-400" },
-            { text: "📞 KI-Telefonassistent übernimmt & transkribiert Anruf...", color: "text-brand-violet" },
-            { text: "🩺 Rezeptwunsch extrahiert und im System hinterlegt.", color: "text-slate-300" },
-            { text: "📩 Benachrichtigung an Team gesendet. Pipeline beendet.", color: "text-brand-cyan font-bold" },
-            { text: "--------------------------------------------------------", color: "text-slate-600" }
-        ];
-
-        let logIndex = 0;
-        const outputDiv = document.getElementById('terminal-output');
-
-        function addTerminalLog() {
-            if (!outputDiv) return;
-            
-            if (logIndex >= terminalLogs.length) {
-                outputDiv.innerHTML = ''; 
-                logIndex = 0;
-            }
-
-            const log = terminalLogs[logIndex];
-            const logElement = document.createElement('div');
-            logElement.className = `${log.color} transition-all duration-300 transform translate-y-1 opacity-0`;
-            
-            const now = new Date();
-            const timeStr = now.toTimeString().split(' ')[0];
-            logElement.innerHTML = `<span class="text-slate-600">[${timeStr}]</span> ${log.text}`;
-            
-            outputDiv.appendChild(logElement);
-            
-            setTimeout(() => {
-                logElement.classList.remove('opacity-0', 'translate-y-1');
-            }, 50);
-
-            outputDiv.scrollTop = outputDiv.scrollHeight;
-            
-            logIndex++;
-            
-            const delay = log.text.startsWith("-") ? 600 : 2500;
-            setTimeout(addTerminalLog, delay);
-        }
-
         // Mobile Burger Menu Toggle
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
@@ -1630,11 +1559,12 @@ USING (
 
         // Starten, sobald die Seite geladen ist
         window.addEventListener('DOMContentLoaded', () => {
-            setTimeout(addTerminalLog, 1000);
+            // Initializing tasks
         });
 
         window.onload = () => {
             updateUI();
+            renderAddonsSection();
             renderMarketplace();
         };
     </script>
